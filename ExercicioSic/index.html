@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stilo.css">
+	<title>SIC</title>
+</head>
+<body>
+	<div id="interface">
+		<div id="cabecalho">
+			<p>Formulário de solicitação de informacão (Pessoa Fisica)</p>
+		</div>
+		<p id="fundoCinza">As informações abaixo são obrigatórias </p>
+		<div id="camposObrigatorios">
+			<p>Nome: 
+			<input type="text" name="nome" value="" size="91"  pattern="[a-z\s]+$" required="yes" /></p>
+			<p>CPF:  &ensp;
+			<input type="text" name="cpf" value="" size="30" required="yes" />
+			<div id="fontNormal"></p>
+			Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se a opção for por RG, indicar Órgão emissor e UF):
+			</div>
+			<p>Tipo de documento: &ensp;
+			<input type="text" name="tipoDocumento" value="" size="30" required="yes" />
+			&ensp; Nº:&ensp;
+			<input type="text" name="numero" value="" size="30" required="yes" /></p>
+			<p>Endereco eletrinico (e-mail):
+			<input type="text" name="eMail" value="" size="69" required="yes" />
+			</p>
+			<p>ou</p>
+			<p>Endereco físico (Rua, nº, complemento, Bairro):</p>
+			<input type="text" name="endFisico" value="" size="97" required="yes" />
+			<p>Cidade:
+			<input type="text" name="cidade" value="" size="36" required="yes" />
+			&ensp;Estado:
+			<input type="text" name="estado" value="" size="30" required="yes" />
+			&ensp;UF:
+			<input type="text" name="uf" value="" size="2" required="yes" />
+			</p>
+			<p>CEP:
+			<input type="text" name="cep" value="" size="20" required="yes" />
+			&ensp;País:
+			<input type="text" name="pais" value="" size="64" required="yes" />
+			</p>
+		</div>
+
+		<p id="fundoCinza"> Os campos a seguir são opcionais e se preenchidos contribuirão para a melhoria de nossos serviços</p>
+
+		<div id="camposOpcionais">
+			<p>Sexo:
+			 <input type="radio" name="sexo" value="masculino">
+			 Maculino
+			 <input type="radio" name="sexo" value="feminino">
+			 Feminino
+	         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Data de nascimento:
+			<input type="date" name="dataNasc" value="" size="20" required="yes" />
+			</p>
+			
+			<p>Escolaridade:</p>
+			<table>
+			
+			<input type="radio" name="escolaridade" value="semInstrucaoFormal">
+			Sem instrução formal <br>
+			<input type="radio" name="escolaridade" value="ensinoFundamental">
+			Ensino Fundamental<br>
+			<input type="radio" name="escolaridade" value="ensinoMedio">
+			Ensino Medio<br>
+		</table>
+			<input type="radio" name="escolaridade" value="ensinoSuperior">
+			EnsinoSuperior<br>
+			<input type="radio" name="escolaridade" value="especializacao">
+			Especialização<br>
+			<input type="radio" name="escolaridade" value="mestrado">
+			Mestrado<br>
+			<input type="radio" name="escolaridade" value="doutorado">
+			Doutorado<br>
+			
+
+			<p>Ocupação principal / Profissão</p>
+
+			<input type="radio" name="ocupacao" value="empregado">
+			Empregado - setor privado <br>
+			<input type="radio" name="ocupacao" value="jornalista">
+			Jornalista<br>
+			<input type="radio" name="ocupacao" value="membroPartido">
+			Membro de partido politico<br>
+			<input type="radio" name="ocupacao" value="repreSindicato">
+			Representante de sindicato<br>
+			<input type="radio" name="ocupacao" value="liberal">
+			Profis. Liberal/Autônomo<br>
+			<input type="radio" name="ocupacao" value="pesquisador">
+			Pesquisador<br>
+			<input type="radio" name="ocupacao" value="professor">
+			Professor<br>
+			<input type="radio" name="ocupacao" value="estudante">
+			Estudante<br>
+			<input type="radio" name="ocupacao" value="empresario">
+			Empresario/empreendedor<br>
+			<input type="radio" name="ocupacao" value="servFederal">
+			Servidor público federal<br>
+			<input type="radio" name="ocupacao" value="servEstadual">
+			Servidor público estadual<br>
+			<input type="radio" name="ocupacao" value="servMunicipal">
+			Servidor público municipal<br>
+			<input type="radio" name="ocupacao" value="membroOngNacional">
+			Membro de ONG nacional<br>
+			<input type="radio" name="ocupacao" value="membroOngInternacional">
+			Membro de ONG internacional<br>
+
+			<p>Telefone: 
+
+			(<input type="text" name="DDD" value="" size="1" required="yes" />)
+			<input type="text" name="telefone" value="" size="20" required="yes" />
+		</p>
+		</div>
+	</div>
+
+		<p id="fundoCinza">
+			Especificação do pedido de acesso à informação
+		</p>
+
+		<div id="especificacaoPedido">
+			<p>Órgão/Entidade destinatário do pedido: </p>
+			<input type="text" name="orgaoDestinataria" value="" size="101" required="yes" />
+			<p>Firma preferencial de recebimento da resposta:</p>
+			<input type="radio" name="formaRecebimento" value="buscarPessoalmente">
+			Buscar/Consultar pessoalmente
+			<input type="radio" name="formaRecebimento" value="email">
+			E-mail
+			<input type="radio" name="formaRecebimento" value="carta">
+			Por carta (com custo)
+			<p>Especificação do pedido:</p>
+			<textarea name="message" rows="13" cols="103"></textarea>
+		</div>
+	</div>
+</body>
+</html>
